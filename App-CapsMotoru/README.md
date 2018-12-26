@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+![ekran alintisi](https://user-images.githubusercontent.com/28316968/50458144-f94c6a80-0971-11e9-80fc-b4783974c580.PNG)
 
 
 
