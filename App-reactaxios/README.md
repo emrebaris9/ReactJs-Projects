@@ -13,6 +13,8 @@ npm install nodemon --save-dev
 npm install axios --save
 
 
+####### In the project directory, you can run:
+
 ### 1 Start the MongoDB server using this command: mongod
 ### 2 Install all the dependencies using this command: npm install
 ### 3 Start the Node.js server using this command: nodemon server
