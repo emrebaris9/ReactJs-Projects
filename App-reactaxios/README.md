@@ -25,6 +25,6 @@ npm install axios --save
 
 ![deepinscreenshot_select-area_20181226190111](https://user-images.githubusercontent.com/28316968/50451265-10746380-0944-11e9-9855-6dd137a70322.png)
 
-##
+## -
 
 ![deepinscreenshot_select-area_20181226190223](https://user-images.githubusercontent.com/28316968/50451266-10746380-0944-11e9-8d2e-14cba8ef89f2.png)
