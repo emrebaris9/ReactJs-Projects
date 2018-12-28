@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import {Button, Header} from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css'
+
 
 export const logLifecycles = Wrapped => {
   let methods = [
@@ -69,12 +72,12 @@ class ParentComponent extends Component {
   static displayName = "Parent";
 
   state = {
-    random: Math.random(),
+    random: 0,
     showChild: true
   };
 
   newRandom = () => {
-    this.setState({ random: Math.random() });
+    this.setState({ random: Math.round(Math.random()*100) });
   };
 
   toggleChild = () => {
@@ -84,18 +87,19 @@ class ParentComponent extends Component {
       };
     });
   };
+
   render() {
     let { showChild } = this.state;
     return (
       <ParentContainer>
-        <h2>Parent</h2>
+        <Header as='h1' color='darkblue'>Parent</Header>
           <hr/>
-        <button onClick={this.newRandom}>Yeni Propslara Geç</button>
+        <Button primary onClick={this.newRandom}>Yeni Propslara Geç</Button>
             <br/>
             <br/>
-        <button onClick={this.toggleChild}>
+        <Button secondary onClick={this.toggleChild}>
           {showChild ? "Gizle:" : "Göster:"} child
-        </button>
+        </Button>
 
         <h3> Random: {this.state.random}</h3>
 
@@ -106,13 +110,18 @@ class ParentComponent extends Component {
 }
 class ChildComponent extends Component {
   static displayName = "Child";
-
+  state = {
+    random2: 0,
+  };
   constructor(props) {
     super(props);
     this.timer = setInterval(() => {
       console.log("timer");
     }, 3000);
   }
+  newRandom2 = () => {
+    this.setState({ random2: Math.round(Math.random()*100) });
+  };
   componentWillUnmount() {
     clearInterval(this.timer);
   }
@@ -120,7 +129,10 @@ class ChildComponent extends Component {
     return (
       <ChildContainer>
         <h3>Child</h3>
-        <h4> Random: {this.props.random}</h4>
+        <h4> Random: {this.props.random}</h4>  <br/><br/><br/>
+        <Button onClick={this.newRandom2}>Change</Button>
+
+        <h5> RandomChild: {this.state.random2}</h5>
       </ChildContainer>
     );
   }
