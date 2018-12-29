@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Application Photo
 ![input](https://user-images.githubusercontent.com/28316968/50541814-a7e4eb00-0bbe-11e9-9539-dd23b0ed3b5e.PNG)
-### Application Photo
+
 
 ## Available Scripts
 
