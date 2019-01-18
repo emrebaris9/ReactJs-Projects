@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm install`
   install the required files
+  
+###### npm install wolfy87-eventemitter --save
 
 In the project directory, you can run:
 
